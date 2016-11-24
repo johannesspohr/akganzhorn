@@ -1,0 +1,328 @@
+.home-bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("images/leafe_man_2.png");
+    background-position: center top;
+    background-size: cover;
+}
+
+.moving-bg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.moving-bg > div {
+    transition: transform 0.3s;
+}
+
+.moving-bg .leaf-behind {
+    z-index: -1;
+    opacity: 0.85;
+}
+
+
+#leafe-one{
+     background-image: url("images/leae_one.png");
+     width: 13vw;
+     height: 13vh;
+     position: absolute;
+     top: 80%;
+     left: 63%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+    transform: rotate(30deg);
+
+}
+
+#leafe-two{
+    background-image: url("images/leafe_two.png");
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-three{
+    background-image: url("images/leafe_three.png");
+    width: 14vw;
+    height: 14vh;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-four{
+    background-image: url("images/leafe_four.png");
+    width: 8vw;
+    height: 8vh;
+    position: absolute;
+    top: 78%;
+    left: 34%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-five{
+    background-image: url("images/leafe_five.png");
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    top: 67%;
+    right: 29%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-six{
+    background-image: url("images/leafe_four.png");
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: rotate(-70deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-seven{
+    background-image: url("images/leafe_seven.png");
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    transform: rotate(-70deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flex-container{
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.home-about{
+    margin: 50vh 0 0 10vw;
+}
+
+.flex-item{
+    padding: 0 0 0 15px;
+}
+
+#burger-menu{
+    border: solid;
+    border-color: #bf043a;
+    border-width: 2px;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: color 0.1s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+#burger-menu::before {
+    content: ' ';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #bf043a;
+    transform: translate(0, -100%);
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+#burger-menu::after {
+    content: ' ';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #bf043a;
+    transform: translate(0, 100%);
+    transition: transform 0s;
+}
+
+#burger-menu span {
+    z-index: 1;
+}
+
+#burger-menu:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#burger-menu .hamburger-inner, #burger-menu .hamburger-inner::before, #burger-menu .hamburger-inner::after {
+    transition: background-color 0.2s;
+}
+
+#burger-menu:hover .hamburger-inner, #burger-menu:hover .hamburger-inner::before, #burger-menu:hover .hamburger-inner::after {
+    background-color: #FFFFFF;
+}
+
+#burger-menu:hover::before{
+    transform: translate(0, 0);
+    transition: transform 0s linear 0.3s;
+}
+
+#burger-menu:hover::after{
+    transform: translate(0, 0);
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.button{
+    border: solid;
+    border-color: #06091D;
+    color: #06091D;
+    font-family:'NHaasGroteskDSW01-95Blk';
+    border-width: 2px;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.1s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.button::before {
+    content: ' ';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    transform: translate(0, -100%);
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.button::after {
+    content: ' ';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    transform: translate(0, 100%);
+    transition: transform 0s;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover::before{
+    transform: translate(0, 0);
+    transition: transform 0s linear 0.3s;
+}
+
+.button:hover::after{
+    transform: translate(0, 0);
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.tabtext{
+    padding: 1px 0 0 15px;
+    font-family:'Plantin W01 Bold Italic';
+    color: #06091D;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.tab{
+    width: 3vw;
+    height: auto;
+}
+
+.note{
+    width: 0px;
+    position: absolute;
+    vertical-align: bottom;
+    right: 35px;
+    bottom: 35px;
+    transform: rotate(-90deg);
+    transform-origin: 0% 100%;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.note strong {
+    font-family:'NHaasGroteskDSW01-95Blk';
+    color: #06091d;
+    font-weight: normal;
+    margin-bottom: -3px;
+    display: block;
+}
+
+.note i {
+    font-family:'Plantin W01 Bold Italic';
+    color: #06091d;
+    font-style: normal;
+}
+
+.view-folio{
+    border-right: 2px solid #bf043a;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    color: #06091D;
+    text-align: end;
+    font-family:'Plantin W01 Bold Italic';
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.view-folio:hover{
+    transform: translate(0,10px);
+    cursor: pointer;
+
+}
+
+.view-folio-container{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    overflow: hidden;
+}

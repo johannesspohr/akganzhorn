@@ -1,0 +1,18 @@
+$hamburgers-padding-x: 20px;
+$hamburgers-padding-y: 15px;
+$hamburger-types     : (collapse);
+
+$hamburger-padding-x                       : 0px;
+$hamburger-padding-y                       : 0px;
+$hamburger-layer-width                     : 20px;
+$hamburger-layer-height                    : 2px;
+$hamburger-layer-spacing                   : 5px;
+$hamburger-layer-color                     : #000;
+$hamburger-layer-border-radius             : 0px;
+$hamburger-hover-opacity                   : 1;
+$hamburger-hover-transition-duration       : 0.15s;
+$hamburger-hover-transition-timing-function: linear;
+
+@import "../bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="scss/style.css  " rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ffb57e43-d008-4e56-a06f-31c5ce1e85fd.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="home-bg">
+
+    <div class="moving-bg">
+
+        <div data-parallax-factor="4" id="leafe-one"></div>
+        <div data-parallax-factor="3" id="leafe-two"></div>
+        <div data-parallax-factor="2" id="leafe-three"></div>
+        <div data-parallax-factor="1" id="leafe-four"></div>
+        <div data-parallax-factor="-1" class="leaf-behind" id="leafe-five"></div>
+        <div data-parallax-factor="-3" class="leaf-behind" id="leafe-six"></div>
+        <div data-parallax-factor="-4" class="leaf-behind" id="leafe-seven"></div>
+
+    </div>
+    <script>
+        $('body').on('mousemove', function(e) {
+            var x = e.pageX - ($(window).width() / 2);
+            var y = e.pageY - ($(window).height() / 2);
+            $('.moving-bg > div').each(function() {
+                console.log(e.pageX);
+                var moveX = x * parseInt($(this).attr('data-parallax-factor')) / 20;
+                var moveY = y * parseInt($(this).attr('data-parallax-factor')) / 20;
+                $(this).css('transform', 'translate('+moveX+'px, '+moveY+'px)');
+            });
+        });
+    </script>
+
+    <div id="burger-menu">
+
+        <button class="hamburger hamburger--collapse" type="button">
+             <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+             </span>
+        </button>
+
+    </div>
+    <div class="flex-container home-about">
+
+        <div class="tab flex-item" >
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.8 12.5">
+                <style type="text/css">
+                    .st0{fill:#06091D;}
+                </style>
+                <polygon class="st0" points="58 0 58 4.9 0 4.9 0 7.6 58 7.6 58 12.5 60.8 12.5 60.8 0 "/>
+            </svg>
+
+        </div>
+
+        <div class="tabtext flex-item">
+            &thinsp;Ann-Kathrin Ganzhorn is a designer <br>
+            currently living in Stuttgart, Germany.
+            <br>
+            <br>
+            <a class="button">
+                <span>about</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="view-folio-container">
+        <div class="view-folio">
+            view<br>
+            Portfolio
+            <div></div>
+        </div>
+    </div>
+
+    <div class="note">
+        <strong>Ann-Kathrin Ganzhorn</strong>
+            <i>akganzhorn@gmail.com&ensp;&ndash;&ensp;media design</i>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+

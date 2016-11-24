@@ -1,0 +1,21 @@
+{
+  "name": "Website_Anni",
+  "authors": [
+    "Ann-Kathrin Ganzhorn <akganzhorn@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "css-hamburgers": "^0.6.0"
+  }
+}

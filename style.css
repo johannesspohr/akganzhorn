@@ -2,8 +2,10 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background-image: url("images/leafe_man_2.png");
-    background-position: center top;
+    background: url(images/leafe_man_3.png) no-repeat -3vw bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -20,7 +22,7 @@
 
 .moving-bg .leaf-behind {
     z-index: -1;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 
@@ -34,44 +36,47 @@
      background-position: center;
      background-repeat: no-repeat;
      background-size: contain;
-    transform: rotate(30deg);
-
+     transform: rotate(30deg);
+     display: none;
 }
 
 #leafe-two{
     background-image: url("images/leafe_two.png");
-    width: 15vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
     position: absolute;
-    top: 75%;
-    left: 20%;
+    top: 78%;
+    left: 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
 }
 
 #leafe-three{
     background-image: url("images/leafe_three.png");
-    width: 14vw;
-    height: 14vh;
+    width: 15vw;
+    height: 15vh;
     position: absolute;
-    top: 70%;
+    top: 62%;
     left: 35%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
 }
 
 #leafe-four{
     background-image: url("images/leafe_four.png");
-    width: 8vw;
-    height: 8vh;
+    width: 5vw;
+    height: 5vh;
     position: absolute;
-    top: 78%;
-    left: 34%;
+    top: 70%;
+    left: 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
 }
 
 #leafe-five{
@@ -97,6 +102,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
 }
 
 #leafe-seven{
@@ -110,10 +116,123 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
+}
+
+#leafe-eight{
+    background-image: url("images/leafe_eight.png");
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-nine{
+    background-image: url("images/leafe_nine.png");
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    top: 38%;
+    left: 33%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+#leafe-ten{
+    background-image: url("images/leafe_ten.png");
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    top: 35%;
+    right: 38%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#leafe-eleven{
+    background-image: url("images/leafe_eleven.png");
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 2%;
+    right: 6%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+#leafe-twelve{
+     background-image: url("images/leafe_twelve.png");
+     width: 7vw;
+     height: 7vh;
+     position: absolute;
+     top: 10%;
+     right: 30%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+#leafe-thirteen{
+     background-image: url("images/leafe_four.png");
+     width: 7vw;
+     height: 7vh;
+     position: absolute;
+     top: 0;
+     right: 52%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+#leafe-fourteen{
+    background-image: url("images/leafe_fourteen.png");
+    width: 3vw;
+    height: 3vh;
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+#leafe-fifteen{
+     background-image: url("images/leafe_fifteen.png");
+     width: 5vw;
+     height: 5vh;
+     position: absolute;
+     bottom: 0;
+     left: 5%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+#leafe-sixteen{
+    background-image: url("images/leafe_sixteen.png");
+    width: 4vw;
+    height: 4vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
 }
 
 .flex-container{
-    padding: 0;
+    padding: 0 150px 0 0;
     margin: 0;
 
     display: -webkit-box;
@@ -122,28 +241,37 @@
     display: -webkit-flex;
     display: flex;
 
-    -webkit-flex-flow: row wrap;
+    -webkit-flex-flow: row nowrap;
     justify-content: flex-start;
-    flex-direction: row;
+    flex-flow: row nowrap;
+
 }
 
 .home-about{
-    margin: 50vh 0 0 10vw;
+    margin: 65vh 0 0 3vw;
 }
 
-.flex-item{
-    padding: 0 0 0 15px;
+.tab{
+    margin: -2px 0 0 0;
+    width: 45px;
 }
+
+.tab-item{
+    padding: 0 0 0 10px;
+    width: 180px;
+}
+
 
 #burger-menu{
     border: solid;
     border-color: #bf043a;
     border-width: 2px;
     position: absolute;
-    right: 35px;
-    top: 35px;
+    right: 10px;
+    top: 10px;
     width: 60px;
     height: 60px;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,8 +281,8 @@
 
 #burger-menu::before {
     content: ' ';
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     display: block;
@@ -166,8 +294,8 @@
 
 #burger-menu::after {
     content: ' ';
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     display: block;
@@ -184,7 +312,7 @@
 #burger-menu:hover {
     color: #FFFFFF;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 #burger-menu .hamburger-inner, #burger-menu .hamburger-inner::before, #burger-menu .hamburger-inner::after {
@@ -205,6 +333,10 @@
     transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
 }
 
+.hamburger.hamburgaa {
+    margin: 0 0 -2px 0;
+}
+
 .button{
     border: solid;
     border-color: #06091D;
@@ -214,14 +346,15 @@
     padding: 10px 15px;
     display: inline-block;
     position: relative;
+    background-color: #FFFFFF;
     overflow: hidden;
     transition: color 0.1s cubic-bezier(0.17, 0.79, 0.44, 1);
 }
 
 .button::before {
     content: ' ';
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     display: block;
@@ -233,8 +366,8 @@
 
 .button::after {
     content: ' ';
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     display: block;
@@ -252,7 +385,7 @@
 .button:hover {
     color: #FFFFFF;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 .button:hover::before{
@@ -265,64 +398,308 @@
     transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
 }
 
-.tabtext{
-    padding: 1px 0 0 15px;
-    font-family:'Plantin W01 Bold Italic';
-    color: #06091D;
-    font-size: 15px;
-    line-height: 19px;
-}
-
-.tab{
-    width: 3vw;
-    height: auto;
+.tab-item .button {
+    margin: 10px 0 0 0
 }
 
 .note{
-    width: 0px;
+    width: 0;
     position: absolute;
     vertical-align: bottom;
     right: 35px;
     bottom: 35px;
     transform: rotate(-90deg);
-    transform-origin: 0% 100%;
+    transform-origin: 0 100%;
     white-space: nowrap;
     cursor: default;
+    display: none;
 }
 
-.note strong {
-    font-family:'NHaasGroteskDSW01-95Blk';
-    color: #06091d;
-    font-weight: normal;
-    margin-bottom: -3px;
+.note h5{
+    margin-bottom: 1px;
     display: block;
 }
 
-.note i {
+h1 {
+    font-family:'NHaasGroteskDSW01-95Blk';
+    color: #06091D;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 1.1em;
+    margin: 0;
+}
+
+h2 {
+    font-family:'Plantin W01 Bold Italic';
+    color: #06091D;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+h4 {
+    font-family:'Plantin W01 Bold Italic';
+    color: #06091D;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+h5 {
+    font-family:'NHaasGroteskDSW01-95Blk';
+    color: #06091d;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+h6 {
     font-family:'Plantin W01 Bold Italic';
     color: #06091d;
     font-style: normal;
+    font-size: 12px;
+    line-height: 1.3em;
+    margin: 0;
 }
 
-.view-folio{
+.view-folio-text{
     border-right: 2px solid #bf043a;
-    padding-right: 10px;
-    padding-bottom: 50px;
-    color: #06091D;
+    padding: 2px 5px 10px 0;
     text-align: end;
-    font-family:'Plantin W01 Bold Italic';
-    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+    width: 230px;
 }
 
 .view-folio:hover{
     transform: translate(0,10px);
-    cursor: pointer;
-
+    cursor: default;
 }
 
 .view-folio-container{
     position: absolute;
     bottom: 0;
-    left: 30%;
+    right: 33%;
     overflow: hidden;
+}
+
+.view-folio{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    transition: transform 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.come-again{
+    padding-left: 10px;
+    color: #bf043a;
+}
+
+.come-again h4{
+    color: #bf043a;
+}
+
+.come-again span{
+    overflow: hidden;
+    height: 0;
+    display: block;
+    transition: height 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+}
+
+.view-folio-container:hover .come-again span{
+    height: 45px;
+}
+
+.about-bg{
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.about-picture img {
+    width: auto;
+    height: 100vh;
+}
+
+.about-about{
+    flex: 1;
+    padding-top: 13vh;
+}
+
+.about-about h1{
+    padding-top: 20vh;
+}
+
+.about-references{
+    flex: 1;
+    padding-top: 13vh;
+
+}
+
+.about-container-item{
+    padding: 20px 0 0 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+
+@media (max-width: 350px){
+    .home-about{
+        margin: 60vh 0 0 3vw;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 900px){
+    h2{
+        font-size: 16px;
+    }
+
+    .tab{
+        margin: -1px 0 0 0;
+    }
+
+    .tab-item {
+        width: 220px;
+    }
+    .home-about{
+        margin: 66vh 0 0 3vw;
+    }
+
+    .home-bg{
+        background-position: -1vw bottom;
+    }
+
+    .view-folio-container{
+        right: 60%;
+    }
+    .view-folio-text{
+        padding: 2px 5px 20px 0;
+    }
+
+    #burger-menu{
+        right: 20px;
+        top: 20px;
+    }
+    #leafe-two{
+        display: block;
+    }
+    #leafe-four{
+        display: block;
+    }
+    #leafe-fourteen{
+        display: block;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .tab-item {
+        width: 380px;
+    }
+
+    .tab{
+        margin: 1px 0 0 0;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .home-bg {
+        background-position: center bottom;
+    }
+    .view-folio-container{
+        right: 60%;
+    }
+
+    .note{
+        display: block;
+    }
+
+    .view-folio-text{
+        padding: 2px 5px 35px 0;
+    }
+
+    .home-about{
+        margin: 66vh 0 0 9vw;
+    }
+
+    #burger-menu{
+        right: 35px;
+        top: 35px;
+    }
+    #leafe-two{
+        width: 15vw;
+        height: 15vh;
+        top: 75%;
+        left: 20%;
+    }
+    #leafe-four{
+        width: 8vw;
+        height: 8vh;
+        top: 70%;
+        left: 34%;
+    }
+
+    #leafe-fourteen{
+        width: 3vw;
+        height: 3vh;
+        bottom: 32%;
+        left: 15%;
+    }
+    #leafe-sixteen{
+        display: block;
+    }
+
+    #leafe-eleven{
+        display: block;
+    }
+
+    #leafe-nine{
+        display: block;
+    }
+
+    #leafe-seven{
+        display: block;
+    }
+
+    #leafe-six{
+        display: block;
+    }
+
+    #leafe-three{
+        display: block;
+    }
+
+    #leafe-one{
+        display: block;
+    }
 }

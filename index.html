@@ -2,47 +2,62 @@
 <html lang="en">
 <head>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Ann-Kathrin Ganzhorn &ndash; Media Designer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="scss/style.css  " rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ffb57e43-d008-4e56-a06f-31c5ce1e85fd.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="home-bg">
+<div class="home-bg" style="display: none;">
 
     <div class="moving-bg">
 
-        <div data-parallax-factor="4" id="leafe-one"></div>
-        <div data-parallax-factor="3" id="leafe-two"></div>
-        <div data-parallax-factor="2" id="leafe-three"></div>
-        <div data-parallax-factor="1" id="leafe-four"></div>
-        <div data-parallax-factor="-1" class="leaf-behind" id="leafe-five"></div>
-        <div data-parallax-factor="-3" class="leaf-behind" id="leafe-six"></div>
-        <div data-parallax-factor="-4" class="leaf-behind" id="leafe-seven"></div>
+        <div data-parallax-factor="2" id="leafe-one"></div>
+        <div data-parallax-factor="2" id="leafe-two"></div>
+        <div data-parallax-factor="4" id="leafe-three"></div>
+        <div data-parallax-factor="1" class="leaf-behind" id="leafe-four"></div>
+        <div data-parallax-factor="-1" id="leafe-five"></div>
+        <div data-parallax-factor="-2" class="leaf-behind" id="leafe-six"></div>
+        <div data-parallax-factor="-1" class="leaf-behind" id="leafe-seven"></div>
+        <div data-parallax-factor="2" id="leafe-eight"></div>
+        <div data-parallax-factor="1" class="leaf-behind" id="leafe-nine"></div>
+        <div data-parallax-factor="2" id="leafe-ten"></div>
+        <div data-parallax-factor="-1" class="leaf-behind" id="leafe-eleven"></div>
+        <div data-parallax-factor="4" id="leafe-twelve"></div>
+        <div data-parallax-factor="1" id="leafe-thirteen"></div>
+        <div data-parallax-factor="1" id="leafe-fourteen"></div>
+        <div data-parallax-factor="3" id="leafe-fifteen"></div>
+        <div data-parallax-factor="1" class="leaf-behind" id="leafe-sixteen"></div>
 
     </div>
     <script>
-        $('body').on('mousemove', function(e) {
+        $('body').on('mousemove', function (e) {
             var x = e.pageX - ($(window).width() / 2);
             var y = e.pageY - ($(window).height() / 2);
-            $('.moving-bg > div').each(function() {
+            $('.moving-bg > div').each(function () {
                 console.log(e.pageX);
-                var moveX = x * parseInt($(this).attr('data-parallax-factor')) / 20;
-                var moveY = y * parseInt($(this).attr('data-parallax-factor')) / 20;
-                $(this).css('transform', 'translate('+moveX+'px, '+moveY+'px)');
+                var moveX = x * parseInt($(this).attr('data-parallax-factor')) / 25;
+                var moveY = y * parseInt($(this).attr('data-parallax-factor')) / 25;
+                $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
             });
         });
     </script>
 
     <div id="burger-menu">
 
-        <button class="hamburger hamburger--collapse" type="button">
+        <button class="hamburger hamburgaa hamburger--collapse" type="button">
              <span class="hamburger-box">
              <span class="hamburger-inner"></span>
              </span>
@@ -51,24 +66,26 @@
     </div>
     <div class="flex-container home-about">
 
-        <div class="tab flex-item" >
+        <div class="tab">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.8 12.5">
                 <style type="text/css">
-                    .st0{fill:#06091D;}
+                    .st0 {
+                        fill: #06091D;
+                    }
                 </style>
                 <polygon class="st0" points="58 0 58 4.9 0 4.9 0 7.6 58 7.6 58 12.5 60.8 12.5 60.8 0 "/>
             </svg>
 
         </div>
 
-        <div class="tabtext flex-item">
-            &thinsp;Ann-Kathrin Ganzhorn is a designer <br>
-            currently living in Stuttgart, Germany.
-            <br>
-            <br>
+        <div class="tab-item">
+           <h2>&thinsp;Ann-Kathrin Ganzhorn is a designer
+            currently living in Stuttgart, Germany.</h2>
             <a class="button">
-                <span>about</span>
+                <span>
+                    about
+                </span>
             </a>
         </div>
 
@@ -76,15 +93,58 @@
 
     <div class="view-folio-container">
         <div class="view-folio">
-            view<br>
-            Portfolio
-            <div></div>
+            <div class="view-folio-text">
+                <h4>Sorry, it's <br>
+                    in progress...</h4>
+                <div class="come-again">
+                    <span>
+                        <h4>If you want to see more,
+                        please come again in a few weeks.</h4>
+                    </span>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="note">
-        <strong>Ann-Kathrin Ganzhorn</strong>
-            <i>akganzhorn@gmail.com&ensp;&ndash;&ensp;media design</i>
+        <h5>Ann-Kathrin Ganzhorn</h5>
+        <h6>akganzhorn@gmail.com&ensp;&ndash;&ensp;media design</h6>
+    </div>
+</div>
+<div class="about-bg">
+    <div class="about-picture">
+        <img src="images/about_bg.png" />
+    </div>
+    <div class="about-about">
+        <h6>about</h6>
+            <h1>Ann-Kathrin Ganzhorn
+            </h1>
+            <div class="about-container-item">
+                <div class="tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.8 12.5">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #06091D;
+                            }
+                        </style>
+                        <polygon class="st0" points="58 0 58 4.9 0 4.9 0 7.6 58 7.6 58 12.5 60.8 12.5 60.8 0 "/>
+                    </svg>
+                </div>
+
+                <div class="tab-item">
+                    <h2>&thinsp;Ann-Kathrin Ganzhorn is a designer
+                        currently living in Stuttgart, Germany.</h2>
+                </div>
+            </div>
+
+
+
+        </>
+    </div>
+    <div class="about-references">
+        <h6>references</h6>
+
     </div>
 </div>
 

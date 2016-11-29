@@ -25,7 +25,7 @@
 
     <button class="hamburger hamburgaa hamburger--collapse" type="button">
              <span class="hamburger-box">
-             <span class="hamburger-inner"></span>
+             <span class="hamburger-inner color-fade-burger"></span>
              </span>
     </button>
 
@@ -66,7 +66,6 @@
             var x = e.pageX - ($(window).width() / 2);
             var y = e.pageY - ($(window).height() / 2);
             $('.moving-bg > div').each(function () {
-                console.log(e.pageX);
                 var moveX = x * parseInt($(this).attr('data-parallax-factor')) / 25;
                 var moveY = y * parseInt($(this).attr('data-parallax-factor')) / 25;
                 $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
@@ -190,7 +189,7 @@
         });
         $('#burger-menu').click(function() {
             $('#menu').toggleClass('visible');
-            $('#burger-menu button').toggleClass('is-active');
+            $('#burger-menu > button').toggleClass('is-active');
         });
     });
 

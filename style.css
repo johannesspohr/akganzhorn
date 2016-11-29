@@ -1128,3 +1128,5 @@ h6 {
         display: block;
     }
 }
+
+button:focus {outline:0;}

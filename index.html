@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+
 <div id="burger-menu">
 
     <button class="hamburger hamburgaa hamburger--collapse" type="button">
@@ -28,6 +29,15 @@
              </span>
     </button>
 
+</div>
+<div id="menu">
+    <div class="menu-dots-container">
+        <div class="menu-dots">
+            <h1>Sorry, it's in progress... <br>
+                If you want to see more, <br>
+                please come again in a few weeks.</h1>
+        </div>
+    </div>
 </div>
 <div class="home-bg">
 
@@ -161,25 +171,34 @@
             <div class="about-references-recog">
             <h5>Future Convention</h5>
             <h4>Future Award 2016</h4>
+                <br>
+                <br>
+                <h5>schwarzspringer Werbeagentur</h5>
+                <h4>Media Design</h4>
             </div>
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
     $(function() {
-        console.log(3);
         $('.slide-back').click(function() {
-            console.log(1);
             $('.about-container').removeClass('visible');
         });
         $('a.button').click(function() {
-            console.log(2);
+            $('.about-container').addClass('visible');
+        });
 
+        $('#burger-menu').click(function() {
+            $('.about-container').removeClass('visible');
+        });
+        $('a.burger-menu').click(function() {
             $('.about-container').addClass('visible');
         });
     });
 
 </script>
+
 </body>
 </html>
 

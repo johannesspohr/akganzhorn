@@ -9,6 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="scripts/moveBGP.js"></script>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -112,15 +113,14 @@
 </div>
 <div class="about-container">
     <div class="slide-back">
-        <div class="slide-back-container">
+        <div class="slide-back-container" onmouseenter="this.moveBGP(0,100,'%')" onmouseleave="this.moveBGP(0,100,'%')">
             <h6>slide back</h6>
             <div class="slide-back-line"></div>
         </div>
     </div>
+    <img src="images/about_bg_2.png" id="about-bg-image"/>
+    <img src="images/about_bg.png" id="about-bg-image2"/>
     <div class="about-bg">
-        <div class="about-picture-2">
-            <img src="images/about_bg.png"/>
-        </div>
         <div class="about-about">
             <h6>about</h6>
             <h1>Ann-Kathrin<br>Ganzhorn</h1>
@@ -136,18 +136,32 @@
                     </svg>
                 </div>
 
-                <div class="tab-item">
-                    <h2>&thinsp;Ann-Kathrin Ganzhorn is a designer
-                        currently living in Stuttgart, Germany.</h2>
+                <div class="about-tab-item">
+                    <h2>I'm a Designer from Germany,
+                        currently living in Stuttgart.
+                        In October I graduated from DHBW Ravensburg,
+                        where I studied Media Design and worked at
+                        schwarzspringer Werbeagentur in Stuttgart
+                        (Cooperative Study, three month periods for three years). <br>
+                        <br>
+                        With a background in advertising at schwarzspringer,
+                        I plunged into digital and interaction design in my
+                        last university semesters and also wrote my
+                        bachelor thesis about. Now I want to take a deeper dive
+                        and improve my skills in that field. <br>
+                        <br>
+                        If you want to know more about me, my work or just take a coffee,
+                        feel free to contact me on akganzhorn at gmail.com.</h2>
                 </div>
             </div>
         </div>
         <div class="about-references">
-            <h6>references</h6>
-
-        </div>
-        <div class="about-picture">
-            <img src="images/about_bg.png"/>
+            <h6>recognition & <br> experience</h6>
+            <div id="placeholder_recog"></div>
+            <div class="about-references-recog">
+            <h5>Future Convention</h5>
+            <h4>Future Award 2016</h4>
+            </div>
         </div>
     </div>
 </div>

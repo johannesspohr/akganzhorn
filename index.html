@@ -188,12 +188,9 @@
         $('a.button').click(function() {
             $('.about-container').addClass('visible');
         });
-
         $('#burger-menu').click(function() {
-            $('.about-container').removeClass('visible');
-        });
-        $('a.burger-menu').click(function() {
-            $('.about-container').addClass('visible');
+            $('#menu').toggleClass('visible');
+            $('#burger-menu button').toggleClass('is-active');
         });
     });
 

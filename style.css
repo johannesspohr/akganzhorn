@@ -5,7 +5,7 @@
     height: 100vh;
     transform: translate(0, -100vh);
     transition: transform 0.4s;
-    z-index: 2;
+    z-index: 3;
 }
 
 #menu.visible {
@@ -28,11 +28,11 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu-dots{
-    z-index: 2;
+    z-index: 3;
     justify-content: center;
     align-items: center;
 }
@@ -41,7 +41,7 @@
     font-family:'NHaasGroteskDSW01-95Blk';
     font-size: 56px;
     color: #FFFFFF;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
 }
 
@@ -318,7 +318,7 @@
 
 #burger-menu{
     border: solid;
-    z-index: 3;
+    z-index: 4;
     border-color: #bf043a;
     border-width: 2px;
     position: absolute;

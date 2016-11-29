@@ -12,7 +12,6 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
     <title>Ann-Kathrin Ganzhorn &ndash; Media Designer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="scss/style.css  " rel="stylesheet">
@@ -20,7 +19,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="home-bg" style="display: none;">
+<div id="burger-menu">
+
+    <button class="hamburger hamburgaa hamburger--collapse" type="button">
+             <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+             </span>
+    </button>
+
+</div>
+<div class="home-bg">
 
     <div class="moving-bg">
 
@@ -54,16 +62,6 @@
             });
         });
     </script>
-
-    <div id="burger-menu">
-
-        <button class="hamburger hamburgaa hamburger--collapse" type="button">
-             <span class="hamburger-box">
-             <span class="hamburger-inner"></span>
-             </span>
-        </button>
-
-    </div>
     <div class="flex-container home-about">
 
         <div class="tab">
@@ -80,8 +78,8 @@
         </div>
 
         <div class="tab-item">
-           <h2>&thinsp;Ann-Kathrin Ganzhorn is a designer
-            currently living in Stuttgart, Germany.</h2>
+            <h2>&thinsp;Ann-Kathrin Ganzhorn is a designer
+                currently living in Stuttgart, Germany.</h2>
             <a class="button">
                 <span>
                     about
@@ -112,14 +110,20 @@
         <h6>akganzhorn@gmail.com&ensp;&ndash;&ensp;media design</h6>
     </div>
 </div>
-<div class="about-bg">
-    <div class="about-picture">
-        <img src="images/about_bg.png" />
+<div class="about-container">
+    <div class="slide-back">
+        <div class="slide-back-container">
+            <h6>slide back</h6>
+            <div class="slide-back-line"></div>
+        </div>
     </div>
-    <div class="about-about">
-        <h6>about</h6>
-            <h1>Ann-Kathrin Ganzhorn
-            </h1>
+    <div class="about-bg">
+        <div class="about-picture-2">
+            <img src="images/about_bg.png"/>
+        </div>
+        <div class="about-about">
+            <h6>about</h6>
+            <h1>Ann-Kathrin<br>Ganzhorn</h1>
             <div class="about-container-item">
                 <div class="tab">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.8 12.5">
@@ -137,17 +141,31 @@
                         currently living in Stuttgart, Germany.</h2>
                 </div>
             </div>
+        </div>
+        <div class="about-references">
+            <h6>references</h6>
 
-
-
-        </>
-    </div>
-    <div class="about-references">
-        <h6>references</h6>
-
+        </div>
+        <div class="about-picture">
+            <img src="images/about_bg.png"/>
+        </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(function() {
+        console.log(3);
+        $('.slide-back').click(function() {
+            console.log(1);
+            $('.about-container').removeClass('visible');
+        });
+        $('a.button').click(function() {
+            console.log(2);
 
+            $('.about-container').addClass('visible');
+        });
+    });
+
+</script>
 </body>
 </html>
 

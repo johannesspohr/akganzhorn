@@ -568,6 +568,12 @@ h6 {
     height: 0;
     display: block;
     transition: height 0.3s cubic-bezier(0.17, 0.79, 0.44, 1);
+    font-family:'Plantin W01 Bold Italic';
+    color: #06091D;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
 }
 
 .view-folio-container:hover .come-again span{

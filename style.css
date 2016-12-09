@@ -39,7 +39,7 @@
 
 .menu-dots h1{
     font-family:'NHaasGroteskDSW01-95Blk';
-    font-size: 56px;
+    font-size: 32px;
     color: #FFFFFF;
     z-index: 3;
     text-align: center;
@@ -770,6 +770,10 @@ h6 {
         display: block;
     }
 
+    .menu-dots h1{
+        font-size: 42px;
+    }
+
     .about-bg{
         padding: 0 0 0 10px;
         margin: 100px 70px 0 20%;
@@ -836,6 +840,10 @@ h6 {
     #placeholder_recog{
         height: 47px;
         width: auto;
+    }
+
+    .menu-dots h1{
+        font-size: 42px;
     }
 
     h2{
@@ -911,6 +919,10 @@ h6 {
 
     .tab{
         margin: 1px 0 0 0;
+    }
+
+    .menu-dots h1{
+        font-size: 54px;
     }
 
     h2{

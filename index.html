@@ -13,9 +13,8 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <script src="scripts/moveBGP.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/ffb57e43-d008-4e56-a06f-31c5ce1e85fd.css">
-    <link href="scss/style.css  " rel="stylesheet">
+    <link href="dist/style.css" rel="stylesheet">
 
     <title>Ann-Kathrin Ganzhorn &ndash; Media Designer</title>
 
@@ -40,7 +39,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="dist/bundle.js"></script>
 </head>
 <body>
 
@@ -84,17 +83,6 @@
         <div data-parallax-factor="1" class="leaf-behind" id="leafe-sixteen"></div>
 
     </div>
-    <script>
-        $('body').on('mousemove', function (e) {
-            var x = e.pageX - ($(window).width() / 2);
-            var y = e.pageY - ($(window).height() / 2);
-            $('.moving-bg > div').each(function () {
-                var moveX = x * parseInt($(this).attr('data-parallax-factor')) / 25;
-                var moveY = y * parseInt($(this).attr('data-parallax-factor')) / 25;
-                $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
-            });
-        });
-    </script>
     <div class="flex-container home-about">
 
         <div class="tab">
@@ -201,22 +189,6 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    $(function() {
-        $('.slide-back').click(function() {
-            $('.about-container').removeClass('visible');
-        });
-        $('a.button').click(function() {
-            $('.about-container').addClass('visible');
-        });
-        $('#burger-menu').click(function() {
-            $('#menu').toggleClass('visible');
-            $('#burger-menu > button').toggleClass('is-active');
-        });
-    });
-
-</script>
 
 </body>
 </html>

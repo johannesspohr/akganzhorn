@@ -7,7 +7,7 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('css-loader!sass-loader')
+                loader: ExtractTextPlugin.extract({use: 'css-loader!sass-loader', publicPath: './'})
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
@@ -24,6 +24,6 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: "/dist/",
+        publicPath: "dist/",
     }
 };
